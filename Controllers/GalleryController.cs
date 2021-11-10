@@ -41,7 +41,7 @@ namespace ShareImageProject.Controllers
                 new GalleryImage()
                 {
                     Title = "Coffee",
-                    Url = "https://www.pexels.com/photo/beverage-breakfast-brewed-coffee-caffeine-374885/",
+                    Url = "https://static.pexels.com/photos/596126/pexels-photo-596126.jpeg",
                     Created = DateTime.Now,
                     Tags = coffeeImageTags
                 },
@@ -49,7 +49,7 @@ namespace ShareImageProject.Controllers
                 new GalleryImage()
                 {
                     Title = "Xbox One",
-                    Url = "https://www.pexels.com/photo/white-xbox-one-console-and-game-controller-5626726/",
+                    Url = "https://static.pexels.com/photos/269809/pexels-photo-269809.jpeg",
                     Created = DateTime.Now,
                     Tags = gamingConsoleImageTags
                 },
@@ -57,7 +57,7 @@ namespace ShareImageProject.Controllers
                 new GalleryImage()
                 {
                     Title = "Playstation 4",
-                    Url = "https://www.pexels.com/photo/white-and-black-sony-ps-4-game-controller-3945657/",
+                    Url = "https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg",
                     Created = DateTime.Now,
                     Tags = gamingConsoleImageTags
                 }
