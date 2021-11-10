@@ -41,7 +41,7 @@ namespace ShareImageProject.Controllers
                 new GalleryImage()
                 {
                     Title = "Coffee",
-                    Url = "",
+                    Url = "https://www.pexels.com/photo/beverage-breakfast-brewed-coffee-caffeine-374885/",
                     Created = DateTime.Now,
                     Tags = coffeeImageTags
                 },
@@ -49,7 +49,7 @@ namespace ShareImageProject.Controllers
                 new GalleryImage()
                 {
                     Title = "Xbox One",
-                    Url = "",
+                    Url = "https://www.pexels.com/photo/white-xbox-one-console-and-game-controller-5626726/",
                     Created = DateTime.Now,
                     Tags = gamingConsoleImageTags
                 },
@@ -57,7 +57,7 @@ namespace ShareImageProject.Controllers
                 new GalleryImage()
                 {
                     Title = "Playstation 4",
-                    Url = "",
+                    Url = "https://www.pexels.com/photo/white-and-black-sony-ps-4-game-controller-3945657/",
                     Created = DateTime.Now,
                     Tags = gamingConsoleImageTags
                 }
@@ -65,7 +65,8 @@ namespace ShareImageProject.Controllers
             
             var model = new GalleryIndexModel
             {
-                Images = imageList
+                Images = imageList,
+                SearchQuery = ""
             };
 
             return View(model);
