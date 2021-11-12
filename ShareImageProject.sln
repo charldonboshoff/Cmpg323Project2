@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareImageProject", "ShareImageProject.csproj", "{B75050EC-174E-40F0-A1E6-EE1EA8C3D433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareImageProject", "ShareImageProject.csproj", "{B75050EC-174E-40F0-A1E6-EE1EA8C3D433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleImageGallery.Data", "..\SimpleImageGallery.Data\SimpleImageGallery.Data.csproj", "{037E2E78-2687-4E43-8D57-52286CE01F57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleImageGallery.Data", "..\SimpleImageGallery.Data\SimpleImageGallery.Data.csproj", "{037E2E78-2687-4E43-8D57-52286CE01F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGallery.Services", "..\ImageGallery.Services\ImageGallery.Services.csproj", "{0F3F921A-EFA9-4BAA-AA70-F216621D80C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{037E2E78-2687-4E43-8D57-52286CE01F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037E2E78-2687-4E43-8D57-52286CE01F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{037E2E78-2687-4E43-8D57-52286CE01F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3F921A-EFA9-4BAA-AA70-F216621D80C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3F921A-EFA9-4BAA-AA70-F216621D80C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3F921A-EFA9-4BAA-AA70-F216621D80C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3F921A-EFA9-4BAA-AA70-F216621D80C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
