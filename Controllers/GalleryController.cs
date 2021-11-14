@@ -12,23 +12,40 @@ namespace ShareImageProject.Controllers
     public class GalleryController : Controller
     {
         //Private field
-        private readonly AnImage _imgService;
+        private readonly AnImage _imgSrv;
 
         //Constructor
         public GalleryController(AnImage imgService)
         {
-            _imgService = imgService;
+            _imgSrv = imgService;
         }
 
         //Going to use dependency injection to inject the service into the controller 
         public IActionResult Index()
         {
-            var imageList = _imgService.GetAll();
+            var imgList = _imgSrv.GetAll();
             
             var model = new GalleryIndexModel
             {
-                Images = imageList,
+                Images = imgList,
                 SearchQuery = ""
+            };
+
+            return View(model);
+        }
+
+        public IActionResult Detail(int id)
+        {
+            var img = _imgSrv.GetId(id);
+
+            var model = new DetailGalModel()
+            {
+                Id = img.Id,
+                Title = img.Title,
+                Created = img.Created,
+                Url = img.Url,
+                //Selecting a tag to its specific description and putting it into a list 
+                Tags = img.Tags.Select(t => t.Description).ToList()
             };
 
             return View(model);
