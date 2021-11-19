@@ -11,7 +11,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
+  
   <ItemGroup>
     <ProjectReference Include="..\ImageGallery.Services\ImageGallery.Services.csproj" />
     <ProjectReference Include="..\SimpleImageGallery.Data\SimpleImageGallery.Data.csproj" />
